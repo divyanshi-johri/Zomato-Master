@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import RestaurantCard from '../RestaurantCard';
 import DeliveryCarousel from './DeliveryCarousal';
 const Delivery = () => {
   const [restaurantList, setRestaurantList] = useState([
@@ -44,11 +43,7 @@ const Delivery = () => {
   return (
     <>
       <DeliveryCarousel />
-      <div className='flex justify-between flex-wrap my-10'>
-        {restaurantList.map((restaurant) => (
-          <RestaurantCard {...restaurant} key={restaurant.id} />
-        ))}
-      </div>
+     
     </>
   );
 };
